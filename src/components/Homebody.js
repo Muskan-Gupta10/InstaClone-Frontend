@@ -8,7 +8,7 @@ import "./homebody.css"
 function Homebody() {
   const [data,setData] =useState([])
   useEffect(()=>{
-    fetch("https://instaclone-backend-1iyb.onrender.com/allpost")
+    fetch("https://instaclone2-backend.onrender.com/allpost")
     .then(res=>res.json())
 
     .then(result=> {
