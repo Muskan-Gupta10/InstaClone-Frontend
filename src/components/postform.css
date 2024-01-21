@@ -3,10 +3,14 @@
     width: 600px;
     margin: auto;
     border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 237);
 }
+
 .postdetails div input{
     font-size: 1.3em;
     margin: 15px;
+    background-color: rgb(162, 158, 158,.5);
 }
 .postdetails{
     text-align: center;

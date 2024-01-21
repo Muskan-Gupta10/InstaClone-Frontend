@@ -6,6 +6,8 @@ import mainImage from "./images/lens-1418954.png"
 
 const Landing = () => {
     return (
+        <div className="wrapper">
+            <div className="w2">
         <div className="landingpage">
 
             <div className="welcomeimage">
@@ -14,11 +16,12 @@ const Landing = () => {
 
 
             <div className="welcome">
-                <h1>welcome to 10x instaclone</h1>
+                <h1>Welcome to InstaShare</h1>
                 <NavLink to="/allpost"> <button>Enter</button></NavLink>
 
             </div>
-
+            </div>
+            </div>
         </div>
     )
 }

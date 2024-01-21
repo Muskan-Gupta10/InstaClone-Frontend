@@ -2,29 +2,45 @@
     display: flex;
     justify-content: space-between;
     height: 100px;
-
+    background-color: rgb(12, 12, 12,.5);
+  position: fixed;
+  width: 100vw;
 
 }
 .navbar .navheading{
     margin-left: 20px;
 }
-.navheading img{
+#logo{
 margin-left: 80px;
+font-size: 3rem;
+background-color: rgb(10, 71, 10);
+color: beige;
+border-radius: 50%;
+
  
 }
-.postimg img{
+#camera{
     margin-right: 80px;
+    font-size: 3rem;
+    color: beige;
 }
 .navheading{
     display:flex;
    
 justify-content: center;
 align-items: center;
+text-decoration:none;
     
 }
 .postimg{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
+#h1{
+    text-decoration:none;
+    color: beige;
+    padding-left: 6px;
+}

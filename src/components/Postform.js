@@ -2,7 +2,8 @@ import React from 'react'
 import "./postform.css"
 import Button from 'react-bootstrap/Button';
 import { useState,useEffect } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'
+
 
 
 function Postform() {
@@ -19,8 +20,9 @@ function Postform() {
  
 
   useEffect(()=>{
-    console.log(url)
+    // console.log(url)
     if(url){
+      // fetch("http://localhost:8080/addpost",{
       fetch("https://instaclone-backend-1iyb.onrender.com/addpost",{
         method:"Post",
         headers: {
@@ -38,6 +40,7 @@ function Postform() {
         .then(res=>
           // console.log(res)
           {
+            console.log(res)
           alert("post added successfully")
           navigate("/allpost")
           }
@@ -47,7 +50,7 @@ function Postform() {
         })
     }
     
-  },[url])
+  },[url,description,location,name,navigate])
  const postimage=()=>{
   if(!name || !location ||!description || !image){
    return setToggle(true)
@@ -98,16 +101,12 @@ function Postform() {
       }} />
       </div>
       <div className='postbtn'>
-    <Button variant="primary" className='upload' onClick={()=>{
-     
-        postimage()
-
-      }} >
+    <Button variant="primary" className='upload' onClick={()=>{postimage()}} >
         POST
       </Button>
       </div>
-     {toggle &&  <h1 className='loader'>Plzz Enter All Details..</h1>}
-     {toggle2 &&  <h1 className='loader2'>Uploading- Plzz wait..</h1>}
+     {toggle &&  <h1 className='loader'>Please Enter All Details..</h1>}
+     {toggle2 &&  <h1 className='loader2'>Uploading- Please wait..</h1>}
      
     </div>
   )

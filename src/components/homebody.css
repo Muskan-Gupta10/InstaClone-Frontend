@@ -1,3 +1,10 @@
 .homecard{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+    box-sizing: border-box;
+    
+}
+
+.card{
+    background-color: beige;
 }

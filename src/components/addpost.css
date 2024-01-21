@@ -1,0 +1,6 @@
+#postformcontainer{
+    padding-top: 25vh;
+    background: linear-gradient(to bottom right,rgb(38, 6, 6),rgb(92, 35, 35),rgb(179, 179, 105),rgb(235, 235, 193));
+
+    height: 100vh;
+}
